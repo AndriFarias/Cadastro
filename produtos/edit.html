@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="produtos.css">
+    <title>Editar Produto</title>
+</head>
+<body onload="mostrar()">
+    <div id="editProduto">
+        <h1>Editar Produto</h1>
+        <div id="editForm">
+            <div id="Editnome">
+                <input type="text" id="editInNome" placeholder="Nome">
+            </div>
+            <div id="editDes">
+                <input type="text" id="editInDescricao" placeholder="Descrição">
+            </div>
+            <div id="editForn">
+                <input type="text" id="editInFornecedor" placeholder="Fornecedor">
+            </div>
+            <div id="editPreco">
+                <input type="number" id="editInPreco" placeholder="Preço">
+            </div>
+            <div id="editEst">
+                <input type="number" id="editInEstoque" placeholder="Estoque">
+            </div>
+            <div id="btnSaveEdit">
+                <button onclick="mudar()" id="editInBtnSave">Salvar</button>
+                <a href="./index.html"><button id="botaoV">Voltar</button></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./produtos.js"></script>
+</body>
+</html>

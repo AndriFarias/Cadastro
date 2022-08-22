@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="produtos.css">
+    <title>Criar Produto</title>
+</head>
+<body>
+    <div id="mainProduto">
+        <h1>Criar Produto</h1>
+        <div id="form">
+            <div id="nome">
+                <input type="text" id="inNome" placeholder="Nome">
+            </div>
+            <div id="des">
+                <input type="text" id="inDes" placeholder="Descrição">
+            </div>
+            <div id="forn">
+                <input type="text" id="inForn" placeholder="Fornecedor">
+            </div>
+            <div id="preco">
+                <input type="number" id="inPreco" placeholder="Preço">
+            </div>
+            <div id="est">
+                <input type="number" id="inEst" placeholder="Estoque">
+            </div>
+            <div id="btnSave">
+                <button onclick="salvarDados()" id="inBtnSave">Salvar</button>
+                <a href="./index.html"><button id="botaoVoltar">Voltar</button></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./produtos.js"></script>
+</body>
+</html>

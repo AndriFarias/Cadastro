@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendas.css">
+    <title>Criar Venda</title>
+</head>
+<body onload="select()">
+    <div id="mainVenda">
+        <h1>Criar Venda</h1>
+        <div id="form">
+            <div id="cliente">
+              <select id="selectCli">
+                <option selected="selected">Selecione o Cliente</option>
+              </select>  
+            </div>
+            <div id="produto">
+                <select id="selectProd" onclick="preco()">
+                    <option selected="selected">Selecione o Produto</option>
+              </select> 
+            </div>
+            <div id="quantidade" onmouseout="total()">
+                <input type="number" id="inQuantidade" placeholder="Quantidade">
+            </div>
+            <div id="preco">
+                <input type="number" id="inPreco" placeholder="Preço">
+            </div>
+            <div id="total" >
+                <input type="number" id="inTotal" placeholder="Total">
+            </div>
+            <div id="btnSave">
+                <button onclick="salvarDados()" id="inBtnSave">Salvar</button>
+                <a href="./index.html"><button id="botaoV">Voltar</button></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./vendas.js"></script>
+</body>
+</html>

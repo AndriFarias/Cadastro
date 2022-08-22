@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pessoas.css">
+    <title>Editar</title>
+</head>
+<body onload="mostrar()">
+    <div id="main">
+        <h1>Editar Pessoa</h1>
+        <div id="edit-form">
+            
+            <div id="edit-nome">
+                <input type="text" id="editInNome" placeholder="Nome" value="">
+            </div>
+            <div id="end">
+                <input type="text" id="editInEnd" placeholder="Endereço" value="">
+            </div>
+            <div id="tel">
+                <input type="text" id="editInTel" placeholder="Telefone" value="">
+            </div>
+            <div id="email">
+                <input type="email" id="editInEmail" placeholder="Email" value="">
+            </div>
+            <div id="dtNasc">
+                <input type="date" id="editInDtNasc" placeholder="Data de nascimento" value="">
+            </div>
+            <div id="btnSave">
+                <button onclick="mudar()" id="editInBtnSave">Salvar</button>
+                <a href="./index.html"><button id="botaoVEdit">Voltar</button></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./pessoas.js"></script>
+</body>
+</html>
